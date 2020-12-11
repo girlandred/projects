@@ -116,20 +116,36 @@ namespace homework1
         }
         private static void Program6()
         {
-            Console.WriteLine("Введiть дробове число: ");
-            var number = Convert.ToDouble(Console.ReadLine());
-            if (number % 2 == 0)
+            double number;
+            while (true)
             {
-                Console.WriteLine("Число не пiдходить");
+                number = Getvalue("Введiть число бiльше 0:");
+                if (number > 0)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Число не пiдходить 0");
+                }
             }
-            else if (number < 0)
+            Console.WriteLine("Результат" + Math.Sqrt((int)++number));
+            return;
+        }
+        private static double Getvalue(string message)
+        {
+            double value;
+            while (true)
             {
-                Console.WriteLine("Число не пiдходить");
-            }
-            else if (number > 0)
-            {
-                var result = Math.Floor(number);
-                Console.WriteLine("Результат = " + Math.Pow(result, 2));
+                Console.WriteLine(message);
+                if (double.TryParse(Console.ReadLine(), out value))
+                {
+                    return value;
+                }
+                else
+                {
+                    Console.WriteLine("Число не пiдходить");
+                }
             }
         }
     }

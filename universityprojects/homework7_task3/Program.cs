@@ -43,10 +43,13 @@ namespace homework7_task3
             while (true)
             {
                 Console.WriteLine("\nEnter nubmer of page: ");
-                if (!int.TryParse(Console.ReadLine(), out int pageNumber))
+                if (int.TryParse(Console.ReadLine(), out int pageNumber))
+                {
+                    pageNumber--;
+                    DisplayPage(pageNumber);
+                }
+                else
                     break;
-                pageNumber--;
-                DisplayPage(pageNumber);
             }
 
             return;
