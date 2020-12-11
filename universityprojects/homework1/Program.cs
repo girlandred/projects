@@ -114,6 +114,7 @@ namespace homework1
             }
 
         }
+
         private static void Program6()
         {
             double number;
@@ -132,13 +133,12 @@ namespace homework1
             Console.WriteLine("Результат" + Math.Sqrt((int)++number));
             return;
         }
-        private static double Getvalue(string message)
-        {
-            double value;
+            private static double Getvalue(string warning)
+            {
             while (true)
             {
-                Console.WriteLine(message);
-                if (double.TryParse(Console.ReadLine(), out value))
+                Console.WriteLine(warning);
+                if (double.TryParse(Console.ReadLine(), out double value))
                 {
                     return value;
                 }
@@ -148,5 +148,5 @@ namespace homework1
                 }
             }
         }
+        }
     }
-}
