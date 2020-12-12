@@ -7,30 +7,30 @@ namespace homework2
             static void Main(string[] args)
             {
                 int taskNumber = 0;
-                while (true)
+            while (true)
                 {
-                    Console.WriteLine("Choose task [1-4]:");
+                    Console.WriteLine("Завдання 1-4 :");
                     int.TryParse(Console.ReadLine(), out taskNumber);
                     switch (taskNumber)
                     {
                         case 1:
-                            Console.WriteLine("Opening task 1...");
+                            Console.WriteLine("Завдання 1");
                             Program1();
                             break;
                         case 2:
                             Program2();
-                            Console.WriteLine("Opening task 2...");
+                            Console.WriteLine("Завдання 2");
                             break;
                         case 3:
-                            Console.WriteLine("Opening task 3...");
+                            Console.WriteLine("Завдання 3");
                             Program3();
                             break;
                         case 4:
-                            Console.WriteLine("Opening task 4...");
+                            Console.WriteLine("Завдання 4");
                             Program4();
                             break;
                         default:
-                            Console.WriteLine("Wrong number, try again");
+                        Console.WriteLine("Завдання немає");
                             break;
 
                     }
@@ -73,13 +73,13 @@ namespace homework2
             private static void Program4()
             {
                 Console.WriteLine("Введiть в рядок: ");
-                string line1 = Console.ReadLine();
-                string[] abcorder = line1.Split(new char[] { ' ' });
-                Array.Sort(abcorder);
-                foreach (string words in abcorder)
-                {
-                    Console.WriteLine(words);
-                }
+                string line = Console.ReadLine();
+            string[] abcorder = line.Split(new char[] { ' ' });
+            Array.Sort(abcorder);
+            foreach (string words in abcorder)
+            {
+                Console.WriteLine(words);
             }
         }
     }
+}

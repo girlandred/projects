@@ -23,7 +23,7 @@ namespace homework4_task3
             : base(x, y) { }
         public override void Draw()
         {
-            Console.WriteLine("It's a rectangle class.");
+            Console.WriteLine("It's a rectangle class, realised by method Draw..");
         }
     }
 
@@ -43,10 +43,10 @@ namespace homework4_task3
         {
             Rectangle rectangle = new Rectangle(2, 3);
             Square square = new Square(4, 4);
-            Figure justfigure = new Figure(8, 12);
+            Figure figure = new Figure(8, 12);
             rectangle.Draw();
             square.Draw();
-            justfigure.Draw();
+            figure.Draw();
             Console.WriteLine("The square edges are: x = {0} y = {1}", square._x, square._y);
         }
     }

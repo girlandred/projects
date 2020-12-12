@@ -45,8 +45,8 @@ namespace homework4_task4
         {
             Square square = new Square(2, 2);
             Rectangle rectangle = new Rectangle(2, 3);
-            Figure justfigure = new Figure(4, 12);
-            DrawAll(square, rectangle, justfigure);
+            Figure figure = new Figure(4, 12);
+            DrawAll(square, rectangle, figure);
         }
         private static void DrawAll(params IDrawable[] array)
         {

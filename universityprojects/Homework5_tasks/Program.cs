@@ -14,19 +14,19 @@ namespace Homework5_tasks
                 switch (taskNumber)
                 {
                     case 1:
-                        Console.WriteLine("Opening task 1...");
+                        Console.WriteLine("Opening task 1");
                         Program1();
                         break;
                     case 2:
-                        Console.WriteLine("Opening task 2...");
+                        Console.WriteLine("Opening task 2");
                         Program3();
                         break;
                     case 3:
-                        Console.WriteLine("Opening task 3...");
+                        Console.WriteLine("Opening task 3");
                         Program4();
                         break;
                     case 4:
-                        Console.WriteLine("Opening task 4...");
+                        Console.WriteLine("Opening task 4");
                         Program5();
                         break;
                     default:

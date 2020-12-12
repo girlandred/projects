@@ -4,10 +4,10 @@ namespace Homework3_task2
 {
     class Rectangle
     {
-        public int x1 { get; set; }
-        public int x2 { get; set; }
-        public int y1 { get; set; }
-        public int y2 { get; set; }
+        public int X1 { get; set; }
+        public int X2 { get; set; }
+        public int Y1 { get; set; }
+        public int Y2 { get; set; }
 
         double Perimeter, Area;
         int Width, Lenghth;
@@ -43,9 +43,9 @@ namespace Homework3_task2
             coordinates[2] = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the y2 coordinate: ");
             coordinates[3] = int.Parse(Console.ReadLine());
-            Rectangle rect = new Rectangle(coordinates[0], coordinates[1], coordinates[2], coordinates[3]);
-            rect.RectanglePerimeter();
-            rect.RectangleArea();
+            Rectangle rectangle = new Rectangle(coordinates[0], coordinates[1], coordinates[2], coordinates[3]);
+            rectangle.RectanglePerimeter();
+            rectangle.RectangleArea();
         }
     }
 }
