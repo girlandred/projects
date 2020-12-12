@@ -9,32 +9,32 @@ namespace homework1
             int taskNumber = 0;
             while (true)
             {
-                Console.WriteLine("Choose task [1-6]:");
+                Console.WriteLine("Choose task 1-6:");
                 int.TryParse(Console.ReadLine(), out taskNumber);
                 switch (taskNumber)
                 {
                     case 1:
-                        Console.WriteLine("Opening task 1...");
+                        Console.WriteLine("Opening task 1");
                         Program1();
                         break;
                     case 2:
                         Program2();
-                        Console.WriteLine("Opening task 2...");
+                        Console.WriteLine("Opening task 2");
                         break;
                     case 3:
-                        Console.WriteLine("Opening task 3...");
+                        Console.WriteLine("Opening task 3");
                         Program3();
                         break;
                     case 4:
-                        Console.WriteLine("Opening task 4...");
+                        Console.WriteLine("Opening task 4");
                         Program4();
                         break;
                     case 5:
-                        Console.WriteLine("Opening task 5...");
+                        Console.WriteLine("Opening task 5");
                         Program5();
                         break;
                     case 6:
-                        Console.WriteLine("Opening task 6...");
+                        Console.WriteLine("Opening task 6");
                         Program6();
                         break;
                     default:
@@ -49,29 +49,28 @@ namespace homework1
         {
             int radius;
             double area;
-            // де radius = радiус, а area - площа
-            Console.WriteLine("Введiть радiус:");
+            Console.WriteLine("Radius:");
             radius = Convert.ToInt32(Console.ReadLine());
             area = (3.14) * radius * radius;
-            Console.WriteLine("Площа кола = " + area);
+            Console.WriteLine("Area = " + area);
             Console.ReadLine();
         }
 
         private static void Program2()
         {
             int number = 3;
-            Console.WriteLine("Введiть довжину сторони куба: ");
+            Console.WriteLine("Cube edge: ");
             var cube = Convert.ToDouble(Console.ReadLine());
             var result = Math.Pow(cube, number);
-            Console.WriteLine("Об'єм куба = " + result);
+            Console.WriteLine("Volume cube = " + result);
         }
         private static void Program3()
         {
-            Console.WriteLine("Введiть число n, яке бiльше 1 i менше 5: ");
+            Console.WriteLine("Enter 1 < n < 5: ");
             var n = Convert.ToDouble(Console.ReadLine());
             if (n > 1 && n < 5)
             {
-                Console.WriteLine("Введiть число m, котре бiльше 1 i менше 5:");
+                Console.WriteLine("Enter m, > 1, < 5:");
                 var m = Convert.ToDouble(Console.ReadLine());
 
                 if (m > 1 && m < 5)
@@ -81,36 +80,36 @@ namespace homework1
                 }
                 else
                 {
-                    Console.WriteLine("Число не пiдходить");
+                    Console.WriteLine("Wrong number");
                 }
             }
             else
             {
-                Console.WriteLine("Число не пiдходить");
+                Console.WriteLine("Wrong number");
             }
         }
         private static void Program4()
         {
-            Console.WriteLine("Введiть дробове число: ");
+            Console.WriteLine("Enter fraction number: ");
             var number = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Результат = " + Math.Floor(number));
         }
         private static void Program5()
         {
-            Console.WriteLine("Введiть просте число, яке буде бiльшим за 2: ");
+            Console.WriteLine("Prime number, >2 : ");
             var number = Convert.ToDouble(Console.ReadLine());
             if (number % 2 == 0)
             {
-                Console.WriteLine("Число не пiдходить");
+                Console.WriteLine("Wrong number");
             }
             else if (number < 2)
             {
-                Console.WriteLine("Число не пiдходить");
+                Console.WriteLine("Wrong number");
             }
             else
             {
                 var result = number / 2;
-                Console.WriteLine("Результат = " + Math.Round(result, 2));
+                Console.WriteLine("Result = " + Math.Round(result, 2));
             }
 
         }
@@ -120,17 +119,17 @@ namespace homework1
             double number;
             while (true)
             {
-                number = Getvalue("Введiть число бiльше 0:");
+                number = Getvalue("Enter number > 0:");
                 if (number > 0)
                 {
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("Число не пiдходить 0");
+                    Console.WriteLine("Wrong number");
                 }
             }
-            Console.WriteLine("Результат" + Math.Sqrt((int)++number));
+            Console.WriteLine("Result" + Math.Sqrt((int)++number));
             return;
         }
             private static double Getvalue(string warning)
@@ -144,7 +143,7 @@ namespace homework1
                 }
                 else
                 {
-                    Console.WriteLine("Число не пiдходить");
+                    Console.WriteLine("Wrong number");
                 }
             }
         }

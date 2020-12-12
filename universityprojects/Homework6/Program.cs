@@ -16,22 +16,22 @@ namespace Homework6
                 {
                     case 1:
                         Program1();
-                        Console.WriteLine("Opening task 1...");
+                        Console.WriteLine("Opening task 1");
                         break;
                     case 2:
                         Program2();
-                        Console.WriteLine("Opening task 2...");
+                        Console.WriteLine("Opening task 2");
                         break;
                     case 3:
-                        Console.WriteLine("Opening task 3...");
+                        Console.WriteLine("Opening task 3");
                         Program3();
                         break;
                     case 4:
-                        Console.WriteLine("Opening task 4...");
+                        Console.WriteLine("Opening task 4");
                         Program4();
                         break;
                     case 5:
-                        Console.WriteLine("Opening task 5...");
+                        Console.WriteLine("Opening task 5");
                         Program5();
                         break;
                     default:
