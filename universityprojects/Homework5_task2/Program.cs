@@ -14,8 +14,8 @@ struct Rectangle : ICoordinate, ISize
     {
         Width = width;
         Height = height;
-        this.X = x;
-        this.Y = y;
+        X = x;
+        Y = y;
 
     }
     public int Getperimetr(int width, int height)
